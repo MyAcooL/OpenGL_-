@@ -4,7 +4,7 @@ uniform mat4 vMatrix;        //总变换矩阵
 varying vec4 vDiffuse;//要传递的散射光变量
 attribute vec2 aTexCoor; // 纹理坐标
 varying vec2 vTextureCoord;// 传递的纹理数据
-
+// 散射光方法
 vec4 pointLight(vec3 normal,vec3 lightLocation, vec4 lightDiffuse){
            //表面点与光源方向的向量
            //(normalize(x)标准化向量，返回一个方向和X相同但长度为1的向量 )
